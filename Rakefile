@@ -21,6 +21,8 @@ namespace :db do
 
   desc "start console"
   task :console do
-    Pry.start
+    # Pry.start
+    require 'pry'
+    binding.pry
   end
 end
